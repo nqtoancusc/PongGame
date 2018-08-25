@@ -5,7 +5,7 @@ CREATE USER 'pong_oneplayer'@'localhost' IDENTIFIED BY 'pong_oneplayer';
 
 GRANT ALL ON pong_oneplayer.* TO pong_oneplayer@localhost IDENTIFIED BY 'pong_oneplayer';
 
-2. Change directory to mFabrikPongOnePlayer/
+2. Change directory to PongGame/
 npm install
 
 Because newer version of npm ( > 2014 ) does not install coffee-script and connect module. So they need to be install separately:
@@ -54,6 +54,6 @@ node app/server 2000
 
 9. To start/stop/restart: forever start/stop/restart PROJECT_ID
 
-forever start /www/node/mFabrikPongOnePlayer/app/server.js 8181
+forever start /www/node/PongGame/app/server.js 8181
 
 
